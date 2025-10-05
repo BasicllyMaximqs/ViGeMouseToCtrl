@@ -11,6 +11,12 @@ The interception driver (https://github.com/oblitum/Interception) is flagged wit
 
 As in hotfix 1.4.1 (https://www.reachthefinals.com/patchnotes/141) - "Clients running key re-mapping programs on PC will not have access to aim assist." the interception driver has been picked up on.
 
+I tried Gyroscopic Input using the DS4 class using ViGEmBus (as the original DualShock 4 controller has gyro to a certain extent), however DirectInput/whatever method THE FINALS uses only picks up on that with newer generation DS5 controllers. Gyro Input would be clamped to a extent where it wont make a large enough effect.
+
+### Networking
+
+The networking consists of a linux-version of mouse locking and sending the deltas to the main server (see udp_mouse_sender.cpp) via UDP for minimum latency.
+
 ### Important Notes
 
 You MAY be banned using this, even though ViGEmBus/Client has legitimate use as EasyAntiCheat most likely has detection vectors set up for similar "loopholes".
